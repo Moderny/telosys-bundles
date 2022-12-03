@@ -1,0 +1,25 @@
+apply plugin: "java"
+
+group = "${GRADLE_GROUP_ID}"
+version = "${PROJECT_VERSION}"
+
+// Java version selection
+sourceCompatibility = ${JAVA_VERSION}
+targetCompatibility = ${JAVA_VERSION}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
+wrapper {
+    gradleVersion = "7.6"
+    distributionType = Wrapper.DistributionType.ALL
+}
