@@ -1,4 +1,4 @@
-# Basic Gradle Template
+# Basic Spring Boot Template
 
 ## Required Project Variables
 | Name         |   Description   |
